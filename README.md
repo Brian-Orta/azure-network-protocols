@@ -6,10 +6,6 @@
 In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 
 
-<!-- <h2>Video Demonstration</h2>
-
-- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com) -->
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -76,11 +72,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </h3>
 <br />
 <p>
-  Remote into your Windows 10 Virtual Machine, install Wireshark, open it and filter for ICMP traffic only. If you are using a Mac like me, you'll have to download <strong><a href="https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12">Microsoft Remote Desktop</a></strong> from the app store:
-</p>
-<p>
-  <img src="https://i.imgur.com/x1K1646.png" height="75%" width="100%" alt="Microsoft Remote Desktop - Mac"/>
-</p>
+
 <p>
   Retrieve the private IP address of the Ubuntu VM and attempt to ping it from within the Windows 10 VM. Observe ping requests and replies within WireShark:
 </p>
@@ -163,7 +155,7 @@ Observe the DHCP traffic appearing in WireShark:
 </h3>
 <br />
 <p>
-  Back in Wireshark, filter for RDP traffic only (tcp.port == 3389).
+  Back in Wireshark, filter for RDP traffic only (tcp.port = 3389).
 </p>
 <p>
   Oserve the immediate non-stop spam of traffic? Why is it non-stop spamming vs only showing traffic when a command is inputted?
@@ -177,6 +169,11 @@ Observe the DHCP traffic appearing in WireShark:
 <br />
 <br />
 
-<p>
-  And now that we're done, DON'T FORGET TO CLEAN UP YOUR AZURE ENVIRONMENT so that you don't incur unnecessary charges.
-</p>
+<h2 align="center">
+🎇CONGRATULATIONS!🎇
+  <br>
+</h2>
+
+<h2 align="center">
+🛑REMEMBER TO DELETE YOUR RESOURCES ONCE YOU ARE DONE WITH THE LAB🛑
+</h2>
